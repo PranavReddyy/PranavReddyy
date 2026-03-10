@@ -34,6 +34,9 @@ def simple_request(func_name, query, variables):
             request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables': variables}, headers=HEADERS)
             if request.status_code == 200:
                 return request
+            if request.status_code >= 500 and attempt < 2:
+                time.sleep(2 ** attempt)
+                continue
             raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
         except requests.exceptions.ConnectionError:
             if attempt < 2:
@@ -130,6 +133,11 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
     for attempt in range(3):
         try:
             request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables': variables}, headers=HEADERS)
+            if request.status_code == 200 or request.status_code == 403:
+                break
+            if request.status_code >= 500 and attempt < 2:
+                time.sleep(2 ** attempt)
+                continue
             break
         except requests.exceptions.ConnectionError:
             if attempt < 2:
