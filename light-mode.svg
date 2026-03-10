@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" width="854" height="400" viewBox="0 0 854 400">
   <rect x="0" y="0" width="854" height="400" rx="8" ry="8" fill="#ffffff"/>
   <rect x="0" y="0" width="854" height="32" rx="8" ry="8" fill="#f6f8fa"/>
@@ -17,34 +17,34 @@
 
     <rect x="28" y="96" width="798" height="1" fill="#d8dee4"/>
 
-    <text x="28"  y="122" font-size="13" fill="#57606a">age</text>
-    <text x="200" y="122" font-size="13" id="age_data" fill="#24292f">--</text>
+    <text x="28" y="122" font-size="13" fill="#57606a">age</text>
+    <text x="200" y="122" font-size="13" id="age_data" fill="#24292f">20 years, 1 month, 10 days</text>
 
-    <text x="28"  y="148" font-size="13" fill="#57606a">commits</text>
-    <text x="200" y="148" font-size="13" id="commit_data" fill="#24292f">--</text>
+    <text x="28" y="148" font-size="13" fill="#57606a">commits</text>
+    <text x="200" y="148" font-size="13" id="commit_data" fill="#24292f">644</text>
 
-    <text x="28"  y="174" font-size="13" fill="#57606a">stars</text>
-    <text x="200" y="174" font-size="13" id="star_data" fill="#24292f">--</text>
+    <text x="28" y="174" font-size="13" fill="#57606a">stars</text>
+    <text x="200" y="174" font-size="13" id="star_data" fill="#24292f">7</text>
 
-    <text x="28"  y="200" font-size="13" fill="#57606a">repos</text>
-    <text x="200" y="200" font-size="13" id="repo_data" fill="#24292f">--</text>
+    <text x="28" y="200" font-size="13" fill="#57606a">repos</text>
+    <text x="200" y="200" font-size="13" id="repo_data" fill="#24292f">56</text>
 
-    <text x="28"  y="226" font-size="13" fill="#57606a">contributed</text>
-    <text x="200" y="226" font-size="13" id="contrib_data" fill="#24292f">--</text>
+    <text x="28" y="226" font-size="13" fill="#57606a">contributed</text>
+    <text x="200" y="226" font-size="13" id="contrib_data" fill="#24292f">61</text>
 
-    <text x="28"  y="252" font-size="13" fill="#57606a">followers</text>
-    <text x="200" y="252" font-size="13" id="follower_data" fill="#24292f">--</text>
+    <text x="28" y="252" font-size="13" fill="#57606a">followers</text>
+    <text x="200" y="252" font-size="13" id="follower_data" fill="#24292f">23</text>
 
     <rect x="28" y="266" width="798" height="1" fill="#d8dee4"/>
 
-    <text x="28"  y="292" font-size="13" fill="#1a7f37">++</text>
-    <text x="200" y="292" font-size="13" id="loc_add" fill="#24292f">--</text>
+    <text x="28" y="292" font-size="13" fill="#1a7f37">++</text>
+    <text x="200" y="292" font-size="13" id="loc_add" fill="#24292f">1,145,487</text>
 
-    <text x="28"  y="318" font-size="13" fill="#cf222e">--</text>
-    <text x="200" y="318" font-size="13" id="loc_del" fill="#24292f">--</text>
+    <text x="28" y="318" font-size="13" fill="#cf222e">--</text>
+    <text x="200" y="318" font-size="13" id="loc_del" fill="#24292f">374,826</text>
 
-    <text x="28"  y="344" font-size="13" fill="#57606a">net</text>
-    <text x="200" y="344" font-size="13" id="loc_data" fill="#24292f">--</text>
+    <text x="28" y="344" font-size="13" fill="#57606a">net</text>
+    <text x="200" y="344" font-size="13" id="loc_data" fill="#24292f">770,661</text>
 
     <rect x="28" y="360" width="798" height="1" fill="#d8dee4"/>
 
