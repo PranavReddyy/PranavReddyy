@@ -1,15 +1,5 @@
-# Pranav Reddy Mitta
-
-Design, engineering & AI — building fast, minimal digital products.
-
-<br>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="dark-mode.svg" />
   <source media="(prefers-color-scheme: light)" srcset="light-mode.svg" />
-  <img alt="GitHub Stats" src="dark-mode.svg" />
+  <img alt="Pranav Reddy Mitta" src="dark-mode.svg" width="100%" />
 </picture>
-
-<br>
-
-[Website](https://itsbypranav.com) / [Twitter](https://x.com/0xPranavReddy) / [LinkedIn](https://www.linkedin.com/in/pranavreddymitta/)
