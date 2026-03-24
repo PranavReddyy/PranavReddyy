@@ -17,7 +17,7 @@
     <rect x="28" y="96" width="798" height="1" fill="#21262d"/>
 
     <text x="28" y="122" font-size="13" fill="#484f58">age</text>
-    <text x="200" y="122" font-size="13" id="age_data" fill="#c9d1d9">20 years, 1 month, 23 days</text>
+    <text x="200" y="122" font-size="13" id="age_data" fill="#c9d1d9">20 years, 1 month, 24 days</text>
 
     <text x="28" y="148" font-size="13" fill="#484f58">commits</text>
     <text x="200" y="148" font-size="13" id="commit_data" fill="#c9d1d9">681</text>
@@ -32,7 +32,7 @@
     <text x="200" y="226" font-size="13" id="contrib_data" fill="#c9d1d9">64</text>
 
     <text x="28" y="252" font-size="13" fill="#484f58">followers</text>
-    <text x="200" y="252" font-size="13" id="follower_data" fill="#c9d1d9">25</text>
+    <text x="200" y="252" font-size="13" id="follower_data" fill="#c9d1d9">22</text>
 
     <rect x="28" y="266" width="798" height="1" fill="#21262d"/>
 
