@@ -17,7 +17,7 @@
     <rect x="28" y="96" width="798" height="1" fill="#21262d"/>
 
     <text x="28" y="122" font-size="13" fill="#484f58">age</text>
-    <text x="200" y="122" font-size="13" id="age_data" fill="#c9d1d9">20 years, 1 month, 26 days</text>
+    <text x="200" y="122" font-size="13" id="age_data" fill="#c9d1d9">20 years, 1 month, 27 days</text>
 
     <text x="28" y="148" font-size="13" fill="#484f58">commits</text>
     <text x="200" y="148" font-size="13" id="commit_data" fill="#c9d1d9">681</text>
