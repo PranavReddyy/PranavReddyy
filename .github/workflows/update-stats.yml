@@ -2,8 +2,20 @@ name: Update GitHub Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight UTC
+    # Avoid the top-of-the-hour backlog that can delay scheduled workflows.
+    - cron: "17 3 * * *"
   workflow_dispatch: # Allows manual trigger
+
+# Explicit permissions are required when the workflow commits the refreshed SVGs
+# back to the repository. `github.token` is short-lived, so it does not need a
+# separately maintained personal access token.
+permissions:
+  contents: write
+
+# Never let two scheduled/manual runs race while updating the cache and SVGs.
+concurrency:
+  group: update-github-stats
+  cancel-in-progress: false
 
 jobs:
   update-stats:
@@ -11,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,7 +36,9 @@ jobs:
 
       - name: Run stats script
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          # The built-in token remains valid for the entire run and can read
+          # public profile data while also pushing this repository's update.
+          ACCESS_TOKEN: ${{ github.token }}
           USER_NAME: ${{ github.repository_owner }}
         run: python github_stats.py
 
@@ -31,4 +47,9 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update GitHub stats" && git push)
+          if git diff --staged --quiet; then
+            echo "Stats are already up to date."
+          else
+            git commit -m "Update GitHub stats"
+            git push
+          fi
